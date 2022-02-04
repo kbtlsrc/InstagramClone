@@ -33,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
         sectionAdapter.addFragment(new MessageFragment());
         ViewPager viewPager = (ViewPager) findViewById(R.id.container);
         viewPager.setAdapter(sectionAdapter);
-
         TabLayout tabLayout = findViewById(R.id.tab);
         tabLayout.setupWithViewPager(viewPager);
         tabLayout.getTabAt(0).setIcon(R.drawable.ic_camera);
